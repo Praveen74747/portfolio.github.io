@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praveen Kumar</title>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <style>
+            #main{
+                display:flex;
+                flex-direction:row;
+                justify-content:center;
+                align-items:center;
+            }
+            #main-child{
+                width:50%;
+                text-align:justify;
+                padding:30px;
+                line-height: 1.6;
+            }
+            h1{
+                color:green;
+            }
+            li{
+                font-weight:bold;
+            }
+            @media only screen and (max-width:700px){
+                #main-child{
+                width:100%;
+                }
+            }
+        </style>
+    </head>
+    <body>    
+        <nav>
+            <div id="nav-left-div">
+                <a href="index.html"><img id="Logo-Pic" src="Images/Logo.jpg"></a>
+            </div>
+            <div id="nav-right-div">
+                <a class="nav-a" href="index.html">Home</a>
+                <a class="nav-a" href="About Me.html">About Me</a>
+                <a class="nav-a" href="Skills.html" style="background-color:#04AA6D">Skills</a>
+                <a class="nav-a" href="Services.html">Services</a>
+                <a class="nav-a" href="Contact Me.html">Contact Me</a>
+            </div>
+        </nav>
+        <div id="main">
+            <div id="main-child">
+                <br><br>
+                <h1>Skills</h1>
+                <br><br>
+                <ul>
+                <li>I use HTML, CSS and JavaScript to produce responsive websites and web apps that provide users the best and most appropriate experience suited to their device and browser.
+                </li><br>
+                <li style="text-decoration:underline">Skills</li><br>
+                <li><img src="Images/HTML5_Icon.png"><p>HTML5</p></li><br>
+                <li><img src="Images/Css_Icon.png"><p>Responsive CSS3</p></li><br>
+                <li><img src="Images/Javascript_Icon.png"><p>JavaScript</p></li><br>
+                <li><img src="Images/Performance_Icon.png"><p>Performance</p></li><br>
+                <li><img src="Images/Accessibility & Best Practices.png"><p>Accessibility & Best Practices</p></li><br>
+                <li><img src="Images/SEO_Icon.png"><p>SEO (Search Engine Optimization)</p></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
