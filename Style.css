@@ -1,138 +1,121 @@
-*{
-    margin:0;
-    box-sizing:border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color:white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
 }
-#main-left p{
+li {
+    font-weight: bold;
+}
+.nav-link:hover {
+    background-color: #04AA6D;
+}
+
+nav img {
+    width: 35%;
+}
+
+#main-left p {
     line-height: 1.6;
 }
-nav{
+
+main {
     display: flex;
     flex-direction: row;
 }
-#nav-left-div{
-    display:flex;
-    width:40%;
-    justify-content:center;
-    align-items:center;
-    background-color:white;
-}
-#nav-right-div{
-    display:flex;
-    width:60%;
-}
-.nav-a{
-    text-decoration:none;
-    text-align:center;
-    width:20%;
-    padding:30px;
-    background-color:black;
-    color:white;
-    font-weight:bold;
-}
-.nav-a:hover{
-    color:white;
-    background-color:#04AA6D;
-}
-main{
-    display:flex;
-    flex-direction:row;
-}
-#main-left{
-    display:flex;
-    width:50%;
-    text-align:center;
-    justify-content:center;
-    align-items:center;
-    color:black;
-    padding:20px;
-}
-#main-right{
-    display:flex;
-    width:50%;
-    padding:10px;
-}
-#Logo-Pic{
-    width:35%;
-}
-#main-left>div span{
-    color:green;
-}
-#main-left button{
-    background-color:lightgreen;
-    font-weight:bold;
-    padding:10px;
-}
-#main-left button:hover{
-    color:white;
-    background-color:green;
-}
-#main-right #Profile-Pic{
-    width:100%;
-}
-#section-1{
-    display:flex;
-    flex-direction:column;
-}
-#section-1 h1{
-    color:green;
-    text-align:center;
-}
-#section-1 h1{
-    text-align:center;
-}
-#section-1 div{
-    padding:30px;
-}
-footer{
-    background-color:black;
-    color:white;
-    text-align:center;
-    padding:30px;
+
+#main-left {
+    display: flex;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 20px;
 }
 
-@media only screen and (max-width:700px){
-    nav{
-        flex-direction:column;
+#main-right {
+    display: flex;
+    width: 50%;
+    padding: 10px;
+}
+
+#Logo-Pic {
+    width: 50%;
+    margin-left:50px;
+}
+
+#main-left>div span {
+    color: green;
+}
+
+#main-left button {
+    background-color: lightgreen;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#main-left button:hover {
+    color: white;
+    background-color: green;
+}
+
+#main-right #Profile-Pic {
+    width: 100%;
+}
+
+#section-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#section-1 h1 {
+    color: green;
+    text-align: center;
+}
+
+#section-1 h1 {
+    text-align: center;
+}
+
+#section-1 div {
+    padding: 30px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media only screen and (max-width:700px) {
+    nav .navbar-brand {
+        width: 50%;
     }
-    #nav-left-div{
-        width:100%;
+
+    nav img {
+        width: 50%;
     }
-    #nav-right-div{
-        display:flex;
-        flex-direction:column;
-        width:100%;
+
+    main {
+        flex-direction: column-reverse;
     }
-    .nav-a{
-        text-decoration:none;
-        text-align:center;
-        width:100%;
-        padding:10px;
-        background-color:black;
-        color:white;
-        font-weight:bold;
+
+    #main-left {
+        width: 100%;
     }
-    main{
-        flex-direction:column-reverse;
+
+    #main-right {
+        width: 100%;
     }
-    #main-left{
-        width:100%;
+
+    #Logo-Pic {
+        margin-left: 20px;
     }
-    #main-right{
-        width:100%;
-    }
-    #nav-left-div{
-        display:flex;
-        width:100%;
-        justify-content:left;
-        align-items:center;
-        background-color:white;
-    } 
-    #Logo-Pic{
-        margin-left:20px;
-    }
-    #br-1{
-        display:none;
+
+    #br-1 {
+        display: none;
     }
 }
