@@ -50,13 +50,21 @@ main {
     color: green;
 }
 
-#main-left button {
+#main-left a {
+    display:block;
+    text-decoration: none;
+    color:#fff;
+    width:150px;
+    margin:auto;
+    border:2px solid black;
+    border-radius:10px;
     background-color: lightgreen;
     font-weight: bold;
     padding: 10px;
+    transition: background-color 0.75s;
 }
 
-#main-left button:hover {
+#main-left a:hover {
     color: white;
     background-color: green;
 }
@@ -118,4 +126,7 @@ footer {
     #br-1 {
         display: none;
     }
+}
+.navbar-toggler,.navbar-collapse{
+    margin-top:5px;
 }
